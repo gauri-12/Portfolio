@@ -43,6 +43,4 @@ Below are some examples of the types of projects you can find in this portfolio.
 
 * [cite_start]**LinkedIn:** [https://www.linkedin.com/in/gauri-rajgopal/](https://www.linkedin.com/in/gauri-rajgopal/) [cite: 3]
 * [cite_start]**Email:** gaurirajgopal12@gmail.com [cite: 3]
-* [cite_start]**Phone:** (437) 518-0733 [cite: 3]
-
 ---
