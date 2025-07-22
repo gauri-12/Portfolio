@@ -26,7 +26,11 @@ This project involves an in-depth analysis of the Brazilian Olist E-commerce Pub
 
 ## Dataset
 
-The dataset used in this project is the Olist E-commerce Public Dataset, available on Kaggle. It contains information on 100,000 orders from 2016 to 2018 made at multiple marketplaces in Brazil. The dataset is structured across several tables, including:
+The dataset used in this project is the Olist E-commerce Public Dataset, available on Kaggle. It contains information on 100,000 orders from 2016 to 2018 made at multiple marketplaces in Brazil. 
+
+[Data source](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+The dataset is structured across several tables, including:
 
 * `olist_customers_datase.csv`: Information about customers.
 * `olist_geolocation_dataset.csv`: Geolocation data of Brazilian cities.
@@ -37,35 +41,34 @@ The dataset used in this project is the Olist E-commerce Public Dataset, availab
 * `olist_products_dataset.csv`: Product information.
 * `product_category_name_translation.csv`: Translation of product categories from Portuguese to English.
 
+The details regarding the Table structures, datatypes, primary key and foreign keys, etc can be found in the [Data Dictionary](SQL_Project/OLIST_DataDictionary.xlsx)
+
 ---
 
 ## Tools and Technologies
 
 * **Python:** Used for data loading, database connection, and potentially some initial data wrangling.
-    * Libraries: `pandas`, `sqlalchemy`, `psycopg2` (or your chosen database connector, e.g., `mysql-connector-python` for MySQL).
-* **SQL (PostgreSQL/MySQL/SQLite):** For database creation, table definition, data manipulation, and complex querying.
+    * Libraries: `pandas`, `sqlalchemy`, `os`
+* **SQL (MySQL):** For database creation, table definition, data manipulation, and complex querying.
 * **Jupyter Notebook/Python Scripts:** For executing Python code and documenting the process.
-* **DB Browser for SQLite / pgAdmin / MySQL Workbench:** For visual inspection of the database (optional).
 
 ---
 
 ## Project Structure
 
 
-* data/                        # Raw dataset files
-* ** olist_customers_dataset.csv
-* ** ... (all other CSV files)
-* notebooks/                   # Jupyter notebooks for data loading, analysis, and exploration
-* ** 1_data_loading_and_db_setup.ipynb
-* ** 2_sql_analysis_and_queries.ipynb
-* ** 3_data_exploration_and_insights.ipynb
-* sql/                         # SQL scripts for database schema, views, and complex queries
-* ** create_tables.sql
-* ** alter_tables.sql
-* ** create_views.sql
-* ** complex_queries.sql
+* Dataset/
+* **This folder includes all the files mentioned under Dataset. These 9 csv files form the input to the SQL tables.
+* SQL_Import.ipynb
+*    Python script to load the data from CSV files into the SQL Database.
+* Environment_Setup.sql
+*    SQL Scripts for setting the database schema, updating/ altering the datatypes and constraints and creation of views for ease of analysis
+* Business_Insights.sql
+*    SQL Scripts for data exploration and analysis to derive insights.
+* SQL_results/
+* **QxResult.csv
+*    Where 'x' denotes a question number. These csv files store the results from the queries run for gathering insights. 
 * README.md                    # Project README file
-* requirements.txt             # Python dependencies
 
 ---
 
