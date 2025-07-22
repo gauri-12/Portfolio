@@ -1,0 +1,8 @@
+payment_types_list,"count(distinct order_id)",avg(payment_total),avg(num_payment_installments)
+NULL,1,NULL,NULL
+credit_card,74259,166.946479,3.5495
+"credit_card, debit_card",1,152.820000,3.0000
+"credit_card, voucher",2245,150.876334,2.1791
+debit_card,1527,142.724158,1.0000
+not_defined,3,0.000000,1.0000
+voucher,21405,142.713551,1.0000
