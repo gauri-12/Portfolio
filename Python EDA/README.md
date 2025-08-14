@@ -22,7 +22,7 @@ The relationship between the datasets is explored by joining them on 'state' and
 
 * Investigate\_a\_Dataset.ipynb: The Jupyter Notebook containing all the code for data cleaning, analysis, and visualization.  
 * README.md: This project overview file.  
-* Database\_Ncis\_and\_Census\_data/: Folder containing the raw input datasets.  
+* Input Datasets/: Folder containing the raw input datasets.  
   * gun\_data.csv: The FBI NICS data.  
   * US\_Census\_Data.csv: The U.S. Census data.
 
