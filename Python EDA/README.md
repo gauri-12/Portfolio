@@ -24,11 +24,11 @@ The relationship between the datasets is explored by joining them on 'state' and
 
 ## **Project Structure**
 
-├── Investigate_a_Dataset.ipynb   # Code for cleaning, analysis, and visualization
-├── README.md                     # Project overview
-└── Input Datasets/
-    ├── gun_data.csv              # FBI NICS data
-    └── US_Census_Data.csv        # U.S. Census data
+* Investigate_a_Dataset.ipynb   # Code for cleaning, analysis, and visualization
+* README.md                     # Project overview
+* Input Datasets/
+* /gun_data.csv              # FBI NICS data
+* /US_Census_Data.csv        # U.S. Census data
 
 ## **Data Cleaning and Transformation**
 
