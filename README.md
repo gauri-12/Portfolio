@@ -25,13 +25,21 @@ Throughout my career at Ernst & Young and ClearOne Advantage, I've focused on:
 Below are some examples of the types of projects you can find in this portfolio. Each project folder will contain relevant code, documentation, and insights.
 
 * **E-commerce Data Analysis (SQL & Python):** Built a relational database from raw Kaggle datasets (~100K orders), performed data cleaning and transformation, and analyzed customers, orders, products, sellers, and logistics.
+
   Key findings: "Bed_bath_table" was the top-performing category, and credit card was the most popular payment method.
+
   Tools used: SQL, Python
+  
 * **Global Happiness & Socioeconomic Indicators (Python, APIs, Web Scraping):** Integrated heterogeneous datasets (Excel, web-scraped tables, and World Bank API), applied data governance principles for completeness and consistency, and analyzed socioeconomic drivers.
+
   Key findings: Found a strong positive link between happiness and life expectancy, and a negative correlation with unemployment.
+
   Tools used: Python
+  
 * **FBI NICS Firearm Background Check Analysis (Python & Data Governance):** Combined FBI background check data with U.S. Census data, cleaned for reliability, and explored population and seasonal trends.
+
   Key findings: Revealed a strong positive correlation (r ≈ 0.85) between state population and background checks, with peaks in November and December.
+
   Tools used: Python
 
 ---
