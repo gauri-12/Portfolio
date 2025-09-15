@@ -1,12 +1,24 @@
 # **Exploratory Data Analysis: FBI NICS Firearm Background Check Data**
 
-## **Context & Business Motivation**
+## **Context and Business Motivation**
 Firearm background checks are a key indicator of gun sales and can serve as a proxy for public safety trends and regulatory compliance. Combining FBI NICS data with demographic information enables actionable insights for:
 - Policymakers: Identifying patterns in firearm demand relative to population and socioeconomic shifts.
 - Regulatory Bodies: Detecting anomalies that may suggest compliance gaps or state-level policy impacts.
 - Public Safety Organizations: Planning resources and interventions based on seasonal or demographic trends.
 
 This analysis examines the FBI National Instant Criminal Background Check System (NICS) data alongside U.S. Census Bureau demographic data to uncover trends, correlations, and anomalies in firearm background checks across the United States.
+
+## **Table of Contents**
+
+- [Context and Business Motivation](#context-and-business-motivation)
+- [Dataset](#dataset)
+- [Tools and Technologies](#tools-and-technologies)
+- [Project Structure](#project-structure)
+- [Data Cleaning and Transformation](#data-cleaning-and-transformation)
+- [Data Governance and Quality Practices](#data-governance-and-quality-practices)
+- [Key Findings and Conclusions](#key-findings-and-conclusions)
+- [Limitations](#limitations)
+- [Future Work](#future-work)
 
 ## **Dataset**
 
@@ -24,11 +36,13 @@ The relationship between the datasets is explored by joining them on 'state' and
 
 ## **Project Structure**
 
-* Investigate_a_Dataset.ipynb   # Code for cleaning, analysis, and visualization
-* README.md                     # Project overview
-* Input Datasets
- * gun_data.csv              # FBI NICS data
- * US_Census_Data.csv        # U.S. Census data
+* Input Datasets: This folder includes all the files mentioned under Dataset.
+ * gun_data.csv: FBI NICS data
+ * US_Census_Data.csv: U.S. Census data
+* Investigate_a_Dataset.ipynb: Python code for cleaning, analysis, and visualization in HTML format.
+* Investigate_a_Dataset.ipynb: Python code for cleaning, analysis, and visualization in Python notebook format.
+* README.md
+
 
 ## **Data Cleaning and Transformation**
 
@@ -45,7 +59,7 @@ The raw data required significant cleaning to be usable. Key steps included:
  
 **Why it matters**: These steps ensure accurate calculations, meaningful merges, and reliable insights.
  
- ## **Data Governance & Quality Practices**
+ ## **Data Governance and Quality Practices**
  
 This project applied key governance principles:
 - **Completeness**: Handled missing values by imputing zeros for firearm checks and dropping uninformative Census rows.
