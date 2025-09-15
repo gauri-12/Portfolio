@@ -1,115 +1,56 @@
-# Brazilian Olist E-commerce Data Analysis (SQL & Python)
+# **Brazilian Olist E-commerce Data Analysis (SQL & Python)**
 
-## Context & Business Motivation
+## **Context & Business Motivation**
 In today's competitive e-commerce landscape, understanding customer behavior, operational efficiency, and market trends is crucial for strategic growth. This project tackles a real-world business intelligence challenge: integrating and analyzing a comprehensive e-commerce dataset to derive actionable insights. By using SQL and Python, the project transforms raw, multi-source data into a structured and analyzable format.
 
 For e-commerce businesses, having reliable, standardized data enables:
-
-Customer-Centric Strategy: Identifying customer behavior patterns and repeat customers to improve customer lifetime value.
-
-Operational Optimization: Analyzing shipping times and order statuses to enhance logistical efficiency and delivery performance.
-
-Product and Market Insights: Understanding top-selling products and categories to inform inventory management and strategic pricing.
-
-Revenue Growth: Pinpointing sales and payment trends to optimize revenue streams and business strategy.
+- Customer-Centric Strategy: Identifying customer behavior patterns and repeat customers to improve customer lifetime value.
+- Operational Optimization: Analyzing shipping times and order statuses to enhance logistical efficiency and delivery performance.
+- Product and Market Insights: Understanding top-selling products and categories to inform inventory management and strategic pricing.
+- Revenue Growth: Pinpointing sales and payment trends to optimize revenue streams and business strategy.
 
 Ultimately, this project highlights how effective data wrangling and analysis build the foundation for data-driven strategic planning and sustained business growth.
 
----
+## **Table of Contents**
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
+- [Context & Business Motivation](#context-&-business-motivation)
 - [Dataset](#dataset)
 - [Tools and Technologies](#tools-and-technologies)
 - [Project Structure](#project-structure)
-- [Setup and Installation](#setup-and-installation)
 - [Database Creation and Data Loading](#database-creation-and-data-loading)
 - [Data Cleaning and Transformation](#data-cleaning-and-transformation)
 - [SQL Queries and Analysis](#sql-queries-and-analysis)
 - [Key Findings and Conclusions](#key-findings-and-conclusions)
 - [Future Work](#future-work)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
----
 
-## Dataset
+## **Dataset**
 
 The dataset used in this project is the Olist E-commerce Public Dataset, available on Kaggle. It contains information on 100,000 orders from 2016 to 2018 made at multiple marketplaces in Brazil. 
-
+The dataset is composed of several tables, including customer, order, product, and review data.
 [Data source](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-
-The dataset is structured across several tables, including:
-
-* `olist_customers_datase.csv`: Information about customers.
-* `olist_geolocation_dataset.csv`: Geolocation data of Brazilian cities.
-* `olist_order_items_dataset.csv`: Items included in each order.
-* `olist_order_payments_dataset.csv`: Payment details for orders.
-* `olist_order_reviews_dataset.csv`: Customer reviews for orders.
-* `olist_orders_dataset.csv`: Main order details.
-* `olist_products_dataset.csv`: Product information.
-* `product_category_name_translation.csv`: Translation of product categories from Portuguese to English.
 
 The details regarding the Table structures, datatypes, primary key and foreign keys, etc can be found in the [Data Dictionary](SQL_Project/OLIST_DataDictionary.xlsx)
 
----
-
-## Tools and Technologies
+## **Tools and Technologies**
 
 * **Python:** Used for data loading, database connection, and potentially some initial data wrangling.
     * Libraries: `pandas`, `sqlalchemy`, `os`
 * **SQL (MySQL):** For database creation, table definition, data manipulation, and complex querying.
 * **Jupyter Notebook/Python Scripts:** For executing Python code and documenting the process.
 
----
+## **Project Structure**
 
-## Project Structure
+* Dataset: This folder includes all the files mentioned under Dataset. These 9 csv files form the input to the SQL tables.
+* SQL_results
+   * QxResult.csv: Where 'x' denotes a question number. These csv files store the results from the queries run for gathering insights.
+* Business_Insights.sql: SQL Scripts for data exploration and analysis to derive insights.
+* Environment_Setup.sql: SQL Scripts for setting the database schema, updating/ altering the datatypes and constraints and creation of views for ease of analysis.
+* OLIST_DataDictionary.xlsx: Data Dictionary outlining the various tables, structure, datatypes and the primary and foreign keys for each table.
+* SQL_Import.ipynb: Python script to load the data from CSV files into the SQL Database.
+* README.md
 
-
-* Dataset/
-* **This folder includes all the files mentioned under Dataset. These 9 csv files form the input to the SQL tables.
-* SQL_Import.ipynb
-*    Python script to load the data from CSV files into the SQL Database.
-* Environment_Setup.sql
-*    SQL Scripts for setting the database schema, updating/ altering the datatypes and constraints and creation of views for ease of analysis
-* Business_Insights.sql
-*    SQL Scripts for data exploration and analysis to derive insights.
-* SQL_results/
-* **QxResult.csv
-*    Where 'x' denotes a question number. These csv files store the results from the queries run for gathering insights. 
-* README.md                    # Project README file
-
----
-
-## Setup and Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-    cd your-repository-name
-    ```
-
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: `venv\Scripts\activate`
-    ```
-
-3.  **Install Python dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Database Setup:**
-    * Ensure your chosen SQL database (e.g., PostgreSQL, MySQL, SQLite) is installed and running.
-    * If using PostgreSQL or MySQL, create a new database for this project (e.g., `olist_ecommerce`).
-    * Update database connection details in your Python scripts (e.g., `1_data_loading_and_db_setup.ipynb`).
-
----
-
-## Database Creation and Data Loading
+## **Database Creation and Data Loading**
 
 This section details how the raw CSV data was loaded into the SQL database.
 
@@ -124,9 +65,8 @@ This section details how the raw CSV data was loaded into the SQL database.
         * Establish a connection to the SQL database using SQLAlchemy.
         * Upload each DataFrame to its corresponding table in the database using `df.to_sql()`.
 
----
 
-## Data Cleaning and Transformation
+## **Data Cleaning and Transformation**
 
 While much of the data cleaning was handled during the Python data loading phase (e.g., setting appropriate data types, handling nulls), some transformations were performed directly within the SQL database or as part of the initial Python processing:
 
@@ -134,9 +74,7 @@ While much of the data cleaning was handled during the Python data loading phase
 * **Handling Missing Values:** Strategies employed for missing values (e.g., imputation, deletion) in specific columns.
 * **Consistency Checks:** Ensuring consistency in categorical data (e.g., product categories, payment types).
 
----
-
-## SQL Queries and Analysis
+## **SQL Queries and Analysis**
 
 This section covers the various SQL queries performed to explore the dataset and answer specific business questions. The queries are organized in the `sql/complex_queries.sql` file and further explained in `notebooks/2_sql_analysis_and_queries.ipynb`.
 
@@ -231,9 +169,8 @@ The `sql/create_views.sql` script defines several SQL views to simplify complex 
 * `v_order_product_details`: Combines order, item, and product information.
 * `v_monthly_sales_summary`: Pre-calculates monthly sales metrics.
 
----
 
-## Key Findings and Conclusions
+## **Key Findings and Conclusions**
 
 Based on the exploration and analysis, here are some key conclusions:
 
@@ -245,30 +182,10 @@ Based on the exploration and analysis, here are some key conclusions:
 * **Order Trends:** There's a clear seasonality in orders, with peaks during certain months.
 * **Logistics Efficiency:** Delivery times vary significantly by region and freight cost.
 
----
-
-## Future Work
+## **Future Work**
 
 * **Advanced SQL Techniques:** Explore window functions, common table expressions (CTEs), and recursive queries for deeper insights.
 * **Data Visualization:** Integrate with tools like Tableau, Power BI, or Python libraries (Matplotlib, Seaborn) to visualize the findings.
 * **Machine Learning:** Develop predictive models (e.g., for customer churn, product recommendations, delivery time prediction).
 * **Performance Optimization:** Optimize queries and database schema for better performance with larger datasets.
 * **ETL Pipeline:** Automate the data extraction, transformation, and loading process using tools like Apache Airflow.
-
----
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements, new analyses, or bug fixes, please open an issue or submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Contact
-
-[Your Name/Alias] - [Your Email/LinkedIn Profile]
