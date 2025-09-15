@@ -1,6 +1,6 @@
-# **Brazilian Olist E-commerce Data Analysis (SQL & Python)**
+# **Brazilian Olist E-commerce Data Analysis (SQL and Python)**
 
-## **Context & Business Motivation**
+## **Context and Business Motivation**
 In today's competitive e-commerce landscape, understanding customer behavior, operational efficiency, and market trends is crucial for strategic growth. This project tackles a real-world business intelligence challenge: integrating and analyzing a comprehensive e-commerce dataset to derive actionable insights. By using SQL and Python, the project transforms raw, multi-source data into a structured and analyzable format.
 
 For e-commerce businesses, having reliable, standardized data enables:
@@ -13,7 +13,7 @@ Ultimately, this project highlights how effective data wrangling and analysis bu
 
 ## **Table of Contents**
 
-- [Context & Business Motivation](#context-&-business-motivation)
+- [Context and Business Motivation](#context-and-business-motivation)
 - [Dataset](#dataset)
 - [Tools and Technologies](#tools-and-technologies)
 - [Project Structure](#project-structure)
