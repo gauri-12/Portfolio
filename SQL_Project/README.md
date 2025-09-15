@@ -1,8 +1,19 @@
 # Brazilian Olist E-commerce Data Analysis (SQL & Python)
 
-## Project Overview
+## Context & Business Motivation
+In today's competitive e-commerce landscape, understanding customer behavior, operational efficiency, and market trends is crucial for strategic growth. This project tackles a real-world business intelligence challenge: integrating and analyzing a comprehensive e-commerce dataset to derive actionable insights. By using SQL and Python, the project transforms raw, multi-source data into a structured and analyzable format.
 
-This project involves an in-depth analysis of the Brazilian Olist E-commerce Public Dataset, a real-world dataset of orders made on Olist, a Brazilian e-commerce platform. The primary goal of this project is to demonstrate proficiency in SQL for data manipulation, querying, and analysis, along with using Python for data loading and database interaction. The analysis aims to uncover insights into customer behavior, order patterns, product performance, and logistical efficiency within the Olist ecosystem.
+For e-commerce businesses, having reliable, standardized data enables:
+
+Customer-Centric Strategy: Identifying customer behavior patterns and repeat customers to improve customer lifetime value.
+
+Operational Optimization: Analyzing shipping times and order statuses to enhance logistical efficiency and delivery performance.
+
+Product and Market Insights: Understanding top-selling products and categories to inform inventory management and strategic pricing.
+
+Revenue Growth: Pinpointing sales and payment trends to optimize revenue streams and business strategy.
+
+Ultimately, this project highlights how effective data wrangling and analysis build the foundation for data-driven strategic planning and sustained business growth.
 
 ---
 
