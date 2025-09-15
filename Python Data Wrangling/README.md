@@ -13,6 +13,17 @@ For businesses and government agencies, these practices are critical. Reliable, 
 
 Ultimately, this project highlights how effective data wrangling and governance not only prepare data for analysis but also build the foundation for transparency, trust, and regulatory compliance in enterprise environments.  
 
+## **Table of Contents**
+
+- [Context & Business Motivation](#context-&-business-motivation)
+- [Dataset](#dataset)
+- [Tools and Technologies](#tools-and-technologies)
+- [Project Structure](#project-structure)
+- [Data Wrangling process](#data-wrangling-process)
+- [Findings & Insights](#findings-&-insights)
+- [Governance Relevance](#governance-relevance)
+- [Future Work](#future-work)
+
 ## **Dataset**
 
 This project utilizes three data sources for the 2024/2025 period:
@@ -27,6 +38,14 @@ The data is combined using a common identifier, the country name, to enable a ho
 
 * **Python**: The primary programming language used for the project.  
 * **Libraries**: pandas, numpy, requests, BeautifulSoup, seaborn, matplotlib.pyplot, wbgapi, and openpyxl.
+
+## **Project Structure**
+
+* Input: This folder includes the input excel data file with the world happiness report in excel format.
+* Output: This folder contains all the cleaned files that are collected from the internet as well as from the excel data file format.
+* DataWrangling_Project.html: This is the python code file for performing the data wrangling and exploration in the HTML format.
+* DataWrangling_Project.ipynb: This is the python code file for performing the data wrangling and exploration in the Python notebook format.
+* README.md
 
 ## **Data Wrangling process**
 
