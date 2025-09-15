@@ -1,8 +1,17 @@
-# **Real-world Data Wrangling Project: Global Happiness and Socioeconomic Indicators**
+# **Data Wrangling Project: Global Happiness and Socioeconomic Indicators**
 
-## **Project Overview**
+## **Context & Business Motivation**
 
-This project focuses on a data wrangling and exploratory data analysis of global well-being metrics. The main objective is to integrate three distinct datasets—the World Happiness Report, global life expectancy data, and socioeconomic indicators from the World Bank API—into a single, clean, and cohesive dataset. The primary goal is to perform a data cleaning and transformation exercise. This comprehensive dataset is then used to explore the relationships between a country's happiness score, life expectancy, and economic factors like GDP per capita and unemployment rates.
+In today’s data-driven economy, organizations often rely on information aggregated from multiple sources—public reports, APIs, and web-scraped datasets—to guide decision-making. However, without a standardized and governed approach, this data is often inconsistent, incomplete, or unreliable, limiting its usefulness for business leaders, policymakers, and regulators.  
+
+This project simulates a real-world governance and analytics challenge: bringing together heterogeneous datasets on global well-being (happiness scores, life expectancy, and economic indicators) and transforming them into a clean, unified dataset. By applying structured data wrangling and quality checks, the project demonstrates how data governance practices such as completeness, validity, and consistency directly enhance the accuracy of downstream analysis.  
+
+For businesses and government agencies, these practices are critical. Reliable, standardized data enables:  
+- **Policy insights**: Understanding the link between happiness, health, and economic performance.  
+- **Regulatory reporting**: Ensuring data quality and consistency in line with compliance standards.  
+- **Strategic decision-making**: Identifying socioeconomic trends that influence investment, healthcare, and development outcomes.  
+
+Ultimately, this project highlights how effective data wrangling and governance not only prepare data for analysis but also build the foundation for transparency, trust, and regulatory compliance in enterprise environments.  
 
 ## **Dataset**
 
@@ -19,15 +28,15 @@ The data is combined using a common identifier, the country name, to enable a ho
 * **Python**: The primary programming language used for the project.  
 * **Libraries**: pandas, numpy, requests, BeautifulSoup, seaborn, matplotlib.pyplot, wbgapi, and openpyxl.
 
-## **Data Wrangling and Cleaning**
+## **Data Wrangling process**
 
-The data wrangling process addressed several key quality and tidiness issues:
+The data wrangling process addressed several key data quality and tidiness issues:
 
 * **Completeness**: Missing values in the World Happiness Report dataset were imputed with 0, and empty columns in the World Bank data were dropped.  
 * **Validity**: Data types were converted to be appropriate for analysis (e.g., converting life expectancy and economic indicators from object to numeric types).  
 * **Tidiness & Consistency**: The three disparate datasets were merged into a single dataframe using country names as the key. Column names were also standardized to be more user-friendly.
 
-## **Exploratory Data Analysis and Findings**
+## **Findings & Insights**
 
 The cleaned and integrated dataset was used to answer several key research questions:
 
@@ -35,6 +44,15 @@ The cleaned and integrated dataset was used to answer several key research quest
 * **Unemployment vs. Happiness & Life Expectancy**: Scatterplots demonstrated a negative correlation, indicating that countries with lower unemployment rates tend to have higher life expectancies and higher happiness scores.  
 * **GDP per Capita vs. Happiness**: A boxplot analysis showed a clear upward trend: countries in the "High" happiness tier generally have a significantly higher GDP per capita compared to countries in the "Low" and "Medium" tiers.
 
-## **Reflection and Future Work**
+## **Governance Relevance**
 
-Further research questions I would want to explore would be by bringing in additional metrics from the world bank dataset that has populated data and identify the relationship and trends of the happiness score and life expectancy against these metrics.
+This project demonstrates core data governance practices:
+- **Data Quality Dimensions**: Addressed completeness, validity, and consistency across multiple global datasets.
+- **Metadata Standardization**: Renamed and aligned columns to ensure schema consistency and enable downstream analytics.
+- **Data Lineage**: Tracked transformations from raw happiness scores, API-fetched economic indicators, and scraped life expectancy tables into a unified dataset.
+- **Governance Extension**: In an enterprise setting, this workflow could be extended with Azure Data Lake for storage and Collibra for metadata cataloguing.
+
+## **Future Work**
+
+*  Perform metadata capture in Collibra or Purview
+*  Extend to Azure Data Lake for storage/ analysis
