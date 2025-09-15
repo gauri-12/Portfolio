@@ -1,6 +1,6 @@
 # **Data Wrangling Project: Global Happiness and Socioeconomic Indicators**
 
-## **Context & Business Motivation**
+## **Context and Business Motivation**
 
 In today’s data-driven economy, organizations often rely on information aggregated from multiple sources—public reports, APIs, and web-scraped datasets—to guide decision-making. However, without a standardized and governed approach, this data is often inconsistent, incomplete, or unreliable, limiting its usefulness for business leaders, policymakers, and regulators.  
 
@@ -15,12 +15,12 @@ Ultimately, this project highlights how effective data wrangling and governance 
 
 ## **Table of Contents**
 
-- [Context & Business Motivation](#context-&-business-motivation)
+- [Context and Business Motivation](#context-and-business-motivation)
 - [Dataset](#dataset)
 - [Tools and Technologies](#tools-and-technologies)
 - [Project Structure](#project-structure)
 - [Data Wrangling process](#data-wrangling-process)
-- [Findings & Insights](#findings-&-insights)
+- [Findings and Insights](#findings-and-insights)
 - [Governance Relevance](#governance-relevance)
 - [Future Work](#future-work)
 
@@ -55,7 +55,7 @@ The data wrangling process addressed several key data quality and tidiness issue
 * **Validity**: Data types were converted to be appropriate for analysis (e.g., converting life expectancy and economic indicators from object to numeric types).  
 * **Tidiness & Consistency**: The three disparate datasets were merged into a single dataframe using country names as the key. Column names were also standardized to be more user-friendly.
 
-## **Findings & Insights**
+## **Findings and Insights**
 
 The cleaned and integrated dataset was used to answer several key research questions:
 
