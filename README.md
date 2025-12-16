@@ -29,18 +29,32 @@ Below are some examples of the types of projects you can find in this portfolio.
   Key findings: "Bed_bath_table" was the top-performing category, and credit card was the most popular payment method.
 
   Tools used: SQL, Python
+
+  Refer folder: SQL_Project
   
 * **Global Happiness & Socioeconomic Indicators (Python, APIs, Web Scraping):** Integrated heterogeneous datasets (Excel, web-scraped tables, and World Bank API), applied data governance principles for completeness and consistency, and analyzed socioeconomic drivers.
 
   Key findings: Found a strong positive link between happiness and life expectancy, and a negative correlation with unemployment.
 
   Tools used: Python
+
+  Refer folder: Python Data Wrangling
   
 * **FBI NICS Firearm Background Check Analysis (Python & Data Governance):** Combined FBI background check data with U.S. Census data, cleaned for reliability, and explored population and seasonal trends.
 
   Key findings: Revealed a strong positive correlation (r ≈ 0.85) between state population and background checks, with peaks in November and December.
 
   Tools used: Python
+
+  Refer folder: Python EDA
+
+* **Data Quality & Governance Framework (Data Governance):** Designed and implemented a scalable, automated Data Quality framework to enforce data integrity across lending club loans data. This project demonstrates the ability to operationalize governance principles at the data layer.
+
+  Key findings: Identified critical risk areas by using a 7-point DQ check (Accuracy, Completeness, Consistency, Integrity, Timeliness, Uniqueness and Validity), demonstrating how proactive data quality prevents high-stakes failures in credit risk assessment.
+
+  Tools used: Python, Google Sheets, Canva
+
+  Refer folder: LendingClub Data Governance
 
 ---
 
