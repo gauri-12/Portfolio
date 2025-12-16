@@ -1,0 +1,139 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21900\viewh13020\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # **\expnd0\expndtw0\kerning0
+Data Quality & Governance Framework (Lending Club Case Study)\kerning1\expnd0\expndtw0 **\
+\
+## **Context and Business Motivation**\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+To establish and operationalise a Data Quality (DQ) framework to validate the fitness-for-use of lending data for regulatory reporting and credit risk modelling.\kerning1\expnd0\expndtw0   \
+\
+
+\f1\b Key Quantified Achievement
+\f0\b0 : \expnd0\expndtw0\kerning0
+Designed and implemented a Python/pandas-based framework that validated 
+\f1\b 7
+\f0\b0  core data quality dimensions (Accuracy, Completeness, Consistency, Integrity, Timeliness, Uniqueness and Validity) across 
+\f1\b 8
+\f0\b0  critical data elements (CDEs). The framework enforced business-critical rules that ensure financial integrity and data stability.\kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+## **Table of Contents**\
+\
+- [Context and Business Motivation](#context-and-business-motivation)\
+- [Dataset](#dataset)\
+- [Tools and Technologies](#tools-and-technologies)\
+- [Project Structure](#project-structure)\
+- [Data Governance process](#data-governance-process)\
+- [Governance Findings](#governance-findings)\
+- [Technical Implementation & Architecture](#technical-implementation-&-architecture)\
+- [Future Work](#future-work)\
+\
+## **Dataset**\
+\
+This project utilizes the Lending Club data for both accepted and rejected loans from 2007 to 2018 from Kaggle. \
+https://www.kaggle.com/datasets/wordsforthewise/lending-club\
+\
+## **Tools and Technologies**\
+\
+* **Python**: The primary programming language used for the project.  \
+* **Libraries**: pandas, numpy\
+* **Design tools**: \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Canva (for flowcharts), Google Sheets (for data dictionary and rule definition)\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+## **Project Structure**\
+* LendingClub Data Dictionary.xlsx: \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Includes metadata, CDE identification, and defined DQ rules.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+* AzureDataFlow.png: \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Flowchart showing the progression of data into the Azure ecosystem. This is a hypothetical flowchart for an Azure-hosted environment.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+* Input: This folder includes the input csv data file with the loans data.\
+* LoanData_DataCleaningProject.ipynb: \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The core Python code file for performing the CDE data quality checks.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+* README.md\
+\
+## **Data Governance process**\
+\
+The data governance process addressed several key steps:\
+\
+* **Data Dictionary**: \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Creating a unified document for the metadata of the 54 chosen elements\kerning1\expnd0\expndtw0 \outl0\strokewidth0 .  \
+* **CDE Identification**: \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Identifying $\\mathbf\{8\}$ critical data elements based on their use as identifiers or in credit risk model target variable calculation\kerning1\expnd0\expndtw0 \outl0\strokewidth0 .   \
+* **Business rule definition for CDEs**: \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Defining and documenting Data Quality business rules for the CDEs.\kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+* **Operationalization of business rules**: \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Operationalizing the defined business rules using Python code\kerning1\expnd0\expndtw0 \outl0\strokewidth0 .\
+\
+## **\expnd0\expndtw0\kerning0
+Governance Findings\kerning1\expnd0\expndtw0 **\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+The framework enforced business-critical rules that ensure financial integrity and data stability.\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf0 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Integrity Check:
+\f0\b0  Total Principal Received (total_rec_prncp) 
+\f1\b must not exceed
+\f0\b0  the original Loan Amount (loan_amnt).\
+\ls1\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Consistency Check:
+\f0\b0  Loan Amount (loan_amnt) must be 
+\f1\b immutable
+\f0\b0  across the entire account history (Uniqueness per ID).\
+\ls1\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Accuracy Check (Temporal):
+\f0\b0  Confirmed that 
+\f1\b month-over-month changes
+\f0\b0  in loan grade distribution did not exceed the $5\\%$ variance threshold.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 Key Governance Finding: 
+\f0\b0 Timeliness and real-time Accuracy rules were documented as 
+\f1\b non-operationalizable
+\f0\b0  due to the snapshot nature of the data (lacking transactional history or modification date columns).\kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+## **Technical Implementation & Architecture**\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+The framework is designed for execution in a modern, scalable cloud environment.\kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 \expnd0\expndtw0\kerning0
+Component		Tool / Service								Role		\
+Code Base		
+\f0\b0 Python, pandas								Implemented DQ rules using highly optimized, vectorized data frame operations.\
+
+\f1\b Compute Engine	
+\f0\b0 Azure Databricks								Executes the Python script against large datasets stored in the Data Lake.\
+
+\f1\b Data Flow		
+\f0\b0 ADLS -> Azure Databricks -> Azure SQL Database -> Power BI	Demonstrates a scalable, modern cloud pipeline for DQ monitoring.\
+
+\f1\b Output		
+\f0\b0 DQ Scorecard (pandas Dataframe)					Compiles all individual CDE scores into a single, structured table for reporting.\kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+## **Future Work**\
+\
+*  Extend dataset to implement timeliness and accuracy checks completely for all the CDEs\
+*  Extend the code to perform generic DQ checks for other non-CDE elements\
+}
