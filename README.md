@@ -4,7 +4,7 @@ Welcome to my GitHub portfolio! This repository serves as a showcase of my proje
 
 ## About Me
 
-A results-driven Data Governance and Analytics professional with 5+ years of experience ensuring data integrity, driving regulatory compliance, and delivering actionable insights using tools like Python, SQL, Tableau, and Power BI across diverse data environments.
+A results-driven Data Governance and Analytics professional with 5+ years of experience ensuring data integrity, driving regulatory compliance, and delivering actionable insights using tools like Python, SQL, Tableau, and Power BI across diverse data environments. I actively apply AI across my work, from streamlining governance processes and policy reviews to building automation pipelines end-to-end.
 
 Throughout my career at Ernst & Young and ClearOne Advantage, I've focused on:
 * **Driving Regulatory Compliance**: Spearheaded the development of RDARR-driven data governance frameworks aligned with BCBS 239, AIRB, and OSFI B-10, leading to a 20% increase in compliance adherence and the identification of 48 critical gaps.
