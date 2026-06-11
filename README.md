@@ -14,7 +14,7 @@ Throughout my career at Ernst & Young and ClearOne Advantage, I've focused on:
 
 ## Skills & Expertise
 
-* **Certifications**: Microsoft Power BI Data Analyst, DCAM Certified v2, Tableau Desktop Specialist 
+* **Certifications**: Microsoft Security Administrator Associate (SC-401), Microsoft Azure Fundamentals, Microsoft Power BI Data Analyst, DCAM Certified v2, Tableau Desktop Specialist 
 * **Data Governance & Regulatory Frameworks**: DCAM, DAMA-DMBOK, BCBS 239, AIRB, OSFI B-10 
 * **Programming**: Python, R, SAS
 * **Databases & Query Languages**: SQL, T-SQL, MS SQL Server, Snowflake, Teradata 
@@ -56,6 +56,13 @@ Below are some examples of the types of projects you can find in this portfolio.
 
   Refer folder: LendingClub Data Governance
 
+* **Job Alert Automation Pipeline (Python & AI):** Built an end-to-end automated pipeline to filter LinkedIn job alerts down to roles most relevant to my profile, delivered directly to my GMail inbox. Used AI to define requirements, select tools, build and test the pipeline, and troubleshoot through to deployment.
+
+  Key outcome: Reduced manual job search noise significantly, enabling focused and persistent outreach.
+
+  Tools used: Python, Gmail API, GitHub Actions, AI-assisted development
+  
+  (Private repository — available upon request)
 ---
 
 ## Connect with Me
